@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymwebsite</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-image: url(https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
+        
+        
+        /* background:url(gym1.webp) ; */
+        color: white;
+    }
+    .box{
+        border: 2px solid rgb(160, 160, 101);
+        width: 20%;
+        height: 100px;
+        margin: 5px ;
+    }
+    .left{
+        display: inline-block;
+        position: absolute;
+        /* border: 2px solid ghostwhite; */
+        width: 100px;
+        left: 30px;
+        top: 05px;
+    }
+    .midle{
+        display: block;
+        /* border: 3px solid green; */
+       margin: 5px auto;
+        width: 60%;
+
+        }
+    .right{
+        display: inline-block;
+        position: absolute;
+        /* border: 2px solid greenyellow; */
+        width: 120px;
+        right: 30px;
+        top: 20px;
+        
+    }
+    .navbar li {
+        display: inline-block;
+        text-decoration: none;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar a{
+        text-decoration: none;
+        font-size: 22px;
+        color: rgb(107, 107, 233);
+        padding: 10px;
+    }
+    .left img{
+        display:inline-block ;
+        width: 80px;
+        height: 50px;
+    }
+    .left h4{ 
+        padding: 0px;
+        margin: 0px auto;
+        /* padding: 20px; */
+        /* background-image: url(logo1.jpg); */
+
+        color: ghostwhite;
+    }
+    button{
+        color: rgb(248, 248, 246);
+        background-color: grey;
+        padding: 2px;
+        margin: 2px;
+        /* border: 2px solid rgb(59, 39, 39); */
+        border-radius: 5px;
+    }
+    button:hover{
+        background-color: rgb(144, 132, 153);
+        color: white;
+        cursor: pointer;
+        
+    }
+    .container{
+        display: inline-block;
+        width: 30%;
+        height: 300px;
+        margin: 150px 0px 0px 120px;
+        border: 5px solid white;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .container form {
+        display: block;
+        color: rgb(20, 43, 245);
+       
+    }
+    .form{
+        margin: 15px;
+    }
+    .button button {
+        background-color: rgb(117, 115, 115);
+        color: rgb(32, 32, 71);
+        display: inline-block;
+        cursor: pointer;
+        
+    }
+    .button{
+        display: inline-block;
+    }
+
+</style>
+<body>
+    <header>
+    <div class="left" # >
+        <img src="logo1.jpg" alt=" gym ">        
+        <h4 >Sam Fitness</h4>
+    </div>
+    <div class="right">
+
+    <button>Search</button>
+    <button> call Us</button>
+
+    </div>
+    <div class="midle">
+    <ul class="navbar" >
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Private Sesson </a></li>
+        <li><a href="#">Video Courses </a></li>
+        <li><a href="#">Our Trainers </a></li>
+        <li><a href="#">Nutraition Shop</a></li>
+        
+    </ul>    
+    </div>
+</header>
+<div class="container">
+    <h3>GET FIT, STRONG & MOTIVATED</h3>
+    
+    <form action="noaction">
+        <div class="form">
+            Name: <input type="number" placeholder="Enter your name" >
+        </div>
+        <div class="form">
+           Number: <input type="Number" placeholder="Enter your number" >
+        </div>
+        <div class="form">
+           Email: <input type="email" placeholder="Enter your Email ID" >
+        </div>
+        <div class="form">
+            Address: <input type="text" placeholder="Enter your Address" >
+        </div>
+        <div class="form">
+           Age: <input type="date" placeholder="Enter your Age" >
+        </div>
+        <div class="button">
+            <button>Submit</button>
+        </div><div class="button">
+            <button>Reset</button>
+        </div>
+    </form>
+    
+
+</div>
+</body>
+</html>
