@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/Tekisky.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekisky</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url(https://images.unsplash.com/photo-1504164996022-09080787b6b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+            font-family: cursive;
+        }
+        form{
+            border: 2px solid blue;
+            width: 550px;
+            margin: 30px auto;
+            padding: 5px 10px;
+            background-image: url(https://images.unsplash.com/photo-1623520333087-62b8793e3d23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+            
+        }
+        .Tekisky{
+            color: white;
+            margin: 2px auto;
+            margin-left: 30px;
+            padding: 2px 2px;
+            text-align: left;
+            /* text-align: center; */
+
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        #caption{
+            text-align: center;
+            padding-bottom: 20px;
+            margin: 10px auto;
+            font-size: 20px;
+            color: lightskyblue;
+        }
+        textarea{
+            color: rgb(70, 6, 247);
+            border: 2px solid green;
+        }
+        button{
+            font-size: 17px;
+        color: rgb(3, 17, 19);
+        box-shadow:2px 1px rgb(108, 212, 238);
+        border-radius: 6px;
+        background-color: rgb(134, 223, 250);
+        width: 100%;
+        display: block;
+        }
+        h1{
+            border: 2px double rgb(147, 235, 135);
+            width: 570px;
+            margin: 10px auto;
+            font-family: fantasy;
+            color: rgb(198, 190, 252);
+            box-shadow:2px 1px 1px 1px springgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tekisky</h1>
+<form action="http://127.0.0.1:5500/Tekisky.html">
+    <div class="Tekisky">
+        <label id="caption"> Feel free to fill the form </label>
+        <label for="Name">Name: <br>
+            <input type="text" id="Name" name="Name" placeholder="Enter your name">
+        </label>
+    </div>
+    <div class="Tekisky">
+        <label for="Email"> Email: <br>
+            <input type="text" id="Email" name="Email" placeholder="Enter your Email">
+        </label>
+    </div><div class="Tekisky">
+        <label for="Number">Number: <br>
+            <input type="text" id="Number" name="Number" placeholder="Enter your number">
+        </label>
+    </div>
+    <div class="Tekisky">
+        <label for="Age">Age: <br>
+            <input type="text" id="Age" name="Age" placeholder="Enter your age">
+        </label>
+    </div>
+    <div class="Tekisky">
+        <label> Your current profession ?
+        </label>
+        <select>
+            <option value="Student"> Student</option>
+            <option value="Devloper">Devloper</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    <div class="Tekisky">
+        <label>Would you recommend a friend to a company ?</label>
+        <label for="Yes">
+    <input type="radio" name="Yes" id="Yes">Yes
+</label>
+<label for="No">
+    <input type="radio" name="No" id="No">NO
+</label>
+<label for="Maybe">
+    <input type="radio" name="Maybe" id="Maybe">Maybe
+</label>
+    </div>
+
+    <div class="Tekisky">
+        <label> Which Languages your want to learn ? </label>
+        <label for="HTML">
+            <input type="checkbox" id="HTML" name="HTML">HTML
+        </label>
+        <label for="CSS">
+            <input type="checkbox" id="CSS" name="CSS">CSS
+        </label>
+        <label for="JavaScript">
+            <input type="checkbox" id="JavaScript" name="JavaScript">JavaScript
+        </label>
+        <label for="NodeJS">
+            <input type="checkbox" id="NodeJS" name="NodeJS">NodeJS
+        </label>
+        <label for="MongoDB">
+            <input type="checkbox" id="MongoDB" name="MongoDB">MongoDB
+        </label>
+        <label for="ReactJS">
+            <input type="checkbox" id="ReactJS" name="ReactJS">ReactJS
+        </label>
+    </div>
+    <div class="Tekisky">
+        <label for="Enter your Suggestions">Enter your Suggestions ?
+            
+        <textarea name="Enter your Suggestions" id="" cols="60" rows="2" placeholder="Enter your Suggestions"></textarea>
+    </label>
+    <button>Submit</button>
+    </div>
+</form>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
