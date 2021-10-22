@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisdom form</title>
+</head>
+<style>
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-image: url(https://images.unsplash.com/photo-1500063002433-e4647d7f1cbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+        text-align: center;
+        color: white;
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+    }
+    form{
+        background-image: url(https://images.unsplash.com/photo-1489257900339-13e688fb85fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+        width: 500px;
+        margin: 50px auto;
+        padding: 20px 20px;
+        box-shadow: 2px 3px 3px rgb(65, 79, 90);
+
+    }
+    .surveyform{
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .surveyform label{
+        margin-bottom:10px;
+        display: block;
+    }
+    .surveyform input[type="radio"],
+    .surveyform input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+    }
+    button {
+        background-color: #314b3f;
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 21px;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: darkgray;
+    }
+    h1{
+        border:2px solid  rgb(173, 100, 241);
+        background-color: darkcyan;
+        margin:10px auto;
+        text-align: center;
+        width:540px ;
+        box-shadow:3px 3px 3px rgb(233, 236, 229);
+    }
+
+    
+
+</style>
+<body>
+    <h1>Wisdom SofTech, Nanded. </h1>
+    <form action="noaction" id="form" >
+        <div class="surveyform"> 
+            Name: <br><input type="text" id="Name" placeholder="Enter your Name" >     
+        </div>
+        <div class="surveyform">
+            Email: <br><input type="text" id="Email" placeholder="Enter your Email" >     
+        </div>
+        <div class="surveyform">
+             Age: <br><input type="text" id="Age" placeholder="Enter your Age" >     
+        </div>
+        <div class="surveyform">
+            Number: <br><input type="text" id="Number" placeholder="Enter your Number" >     
+        </div>
+        <div class="surveyform">
+            <label for="role" id="lable-role" >
+                Which option best describes you?
+            </label>     
+            <select name="role" id="role">
+                <option value="Student">Student</option>
+                <option value="Apprentice">Apprentice</option>
+                <option value="Professional">Professional</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="surveyform">
+           <label> Would you recommed
+            to a friend?</label>
+            <label for="yes">
+                <input type="radio" id="yes" name="yes" >Yes
+            </label>
+            <label for="No">
+                <input type="radio" id="No" name="No" >No
+            </label>
+            <label for="Maybe">
+                <input type="radio" id="Maybe" name="Maybe" >Maybe
+            </label>
+
+            <div class="surveyform">
+                <label> Languages and Frameworks known ( check all that apply) </label>
+                <label for="Html">
+                   <input type="checkbox" id="Html" name="Html" >Html
+                </label>
+                <label for="Css">
+                    <input type="checkbox" id="Css" name="Css">Css
+                </label>
+                <label for="Mongodb"> 
+                    <input type="checkbox" id="Mongodb" name="Mongodb" >Mongodb
+                 </label>
+              
+                 <label for="JavaScript">
+                     <input type="checkbox" id="JavaScript" name="JavaScript" >JavaScript
+                 </label>
+                 <label for="React">
+                     <input type="checkbox" id="React" name="React" >React
+                 </label>
+                 <label for="Python"> 
+                    <input type="checkbox" id="Python" name="Python" >Python
+                </label>
+                 <label for="Angular"> 
+                     <input type="checkbox" id="Angular" name="Angular" >Angular
+                 </label>
+                 <label for="Spring">
+                     <input type="checkbox" id="Spring" name="Spring">Spring
+                 </label>
+            </div>
+            <div class="surveyform">
+                <label>
+                    Any comments or suggestions
+
+                </label>
+                <textarea name="comment" id="comment" cols="40" rows="2"> Enter your comment here </textarea>
+            </div>
+            <button type="submit" value="submit" >Submit</button>
+
+
+        </div>
+
+    </form>
+    
+</body>
+</html>
