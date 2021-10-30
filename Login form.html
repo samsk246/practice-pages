@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginePage2</title>
+    <style>
+        /* .formbox{
+            height: 400px;
+            width: 400px;
+            border: 2px solid red;
+            
+        } */
+        body{
+            background-image: url(https://images.unsplash.com/photo-1581239125393-67d48d3dd429?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);
+            background-repeat: no-repeat;
+            background-size:cover;
+            font-size: 1.15rem;
+            font-family:sans-serif;
+            
+        }
+
+        form{
+            /* border: 2px solid; */
+            width: 25rem;
+            height: 31.25rem;
+            text-align: center;
+            background-color: rgba(17, 17, 17, 0.2);
+        
+            margin: 9.3rem auto;
+        }
+        .caption{
+            margin: 0.62rem auto;
+            
+        }
+        input  , button{
+            display:block;
+            margin: 1.56rem auto;
+            width: 23.75rem;
+            height: 2.5rem;
+            font-size: 1.05rem;
+        }
+        button{
+            background-color: rgb(40, 122, 245);
+            font-size: 1.1rem;
+            height: 2.5rem;
+        }
+        span a{
+            display: block;
+            text-align: left;
+            /* color: red; */
+            text-decoration: none;
+            color: white;
+            margin-left: 0.437rem;
+            
+        }
+        h1{
+            color: rgb(53, 49, 49);
+            /* border: 2px solid; */
+        }
+         table button{
+             width: 11.56rem;
+             /* height: 2.5rem; */
+            /* border: 2px solid; */
+            color: rgb(253, 244, 244);
+            text-decoration: rgb(252, 249, 249);
+            margin-left: 0.375rem;
+            padding: 0.5rem;
+        }
+         a{
+            text-decoration: none;
+            color: rgb(250, 252, 241);
+        }
+        a:hover, button:hover{
+            cursor: pointer;
+            background-color: rgba(250, 240, 231, 0.5);
+            color: rgb(152, 252, 214);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="formbox">
+        <form action="">
+            <h1>Login Form</h1>
+            <input type="text" placeholder="Email or Phone">
+            <input type="password" id="password" placeholder="Password">
+             <span><a href="#" >Forgot password?</a></span>
+            <button> <b> LOGIN </b> </button>
+            
+            <table>
+            <a id="or">Or login with</a>
+            <tr>
+                <td><a href="#"></a><button style="background-color: rgb(10, 46, 250);" >  Facebook </button></a></td>
+                <td><a href="#" target="_blank"> <button style="background-color: rgb(252, 41, 129);" > Instagram </button></a></td>
+            </tr>
+            <tr>
+                <td colspan="2">Don't have account? <a href="">Singup Now</a></td>
+            </tr>
+        </table>
+
+        </form>
+    </div>
+</body>
+</html>

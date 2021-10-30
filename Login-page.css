@@ -1,0 +1,92 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(91, 91, 243);
+  }
+  .container {
+    /* border: 2px solid red; */
+    width: 450px;
+    height: 360px;
+  }
+  .box {
+    border: 2px solid;
+    width: 450px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: white;
+  }
+  input {
+    /* display: block; */
+    margin-bottom: 1.1rem;
+    border-radius: 20px;
+    width: 350px;
+    height: 35px;
+    background-color: rgb(244, 255, 254);
+    text-align: left;
+    font-size: 1.3rem;
+  }
+
+  button {
+    width: 350px;
+    height: 39px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.3rem;
+    background-color: rgb(41, 55, 248);
+  }
+  button:hover{
+      cursor: pointer;
+      color: black;
+      background-color:whitesmoke;
+  }
+  h1 {
+    margin-top: 10px;
+    font-size: 2.8rem;
+  }
+
+  .icons {
+    /* border: 2px solid; */
+    display: flexbox;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: 340px;
+    /* top: 36rem; */
+  }
+ 
+  #icon-1 {
+    background-color: blue;
+  }
+  #icon-2 {
+    background-color: rgb(255, 0, 98);
+  }
+  #icon-3 {
+    background-color: rgb(55, 221, 243);
+  }
+  #icon-1,
+  #icon-2,
+  #icon-3 {
+    color: rgb(253, 253, 252);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 2px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 1px 2px rgb(223, 251, 253);
+  }
+  #icon-1,
+  #icon-2,
+  #icon-3:hover{
+      cursor: pointer;
+  }
